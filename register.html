@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -19,7 +19,7 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> RED DE GAMLE! </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -34,18 +34,12 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>INDBERET SOM EVAKUERINGSHJÆLPER</h1>
       <section id="form-section">
         <form>
           <div class="form-group">
-            <label for="first_name">First name</label>
-            <input type="text" id="first_name" name="first_name" required />
-            <p class="error-message">Please enter a value</p>
-          </div>
-
-          <div class="form-group">
-            <label for="last_name">Last name</label>
-            <input type="text" id="last_name" name="last_name" required />
+            <label for="full_name">Fulde navn</label>
+            <input type="text" id="full_name" name="full_name" required />
             <p class="error-message">Please enter a value</p>
           </div>
 
@@ -56,19 +50,42 @@
           </div>
 
           <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required />
+            <label for="number">Telefonnummer</label>
+            <input type="number" id="number" name="number" required />
             <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="role">Din rolle</label>
+            <select id="role">
+              <option value="">--Vælg din rolle--</option>
+              <option value="helper">Frivillig hjælper</option>
+              <option value="personale">Plejepersonale</option>
+              <option value="nurse">Sygeplejske</option>
+              <option value="family">Pårørende</option>
+            </select>
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="city">By/Område</label>
+            <input type="text" id="city" name="city" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="marks">Evt. bemærkninger</label>
+            <textarea name="marks" id="marks" required></textarea>
           </div>
 
           <div class="form-group">
             <label for="terms">
               <input type="checkbox" id="terms" name="accept_terms" value="yes" required />
-              Accept terms
+              Accepter vilkår
             </label>
           </div>
 
-          <button>Sign up</button>
+          <button>Indsend oplysninger</button>
         </form>
 
         <!-- <article id="form-info">

@@ -84,7 +84,7 @@ nav ul {
 }
 
 a {
-  font-family: var(--font-family-sans);
+  font-family: "Rubik";
 }
 
 nav a {
@@ -94,19 +94,25 @@ nav a {
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: var(--color-logotype-bg);
+  background-color: #000;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 3.6rem;
+  font-family: "Rubik";
 }
 
 #logotype-wrapper > a {
-  color: var(--color-text-logotype);
-  font-size: var(--font-logotype-size);
+  color: #fffae2;
+  font-size: 48;
   font-weight: medium;
   width: max-content;
   margin-left: 1rem;
+}
+
+.logotype-wrapper {
+  font-size: 48;
+  font-family: "Runrik";
 }
 
 /* Global menu */
@@ -136,4 +142,14 @@ nav a:active {
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+
+.hotspot {
+  fill: antiquewhite;
+  stroke: black;
+}
+
+.hotspot:hover {
+  cursor: pointer;
+  filter: grayscale(100);
 }
