@@ -26,7 +26,7 @@ header {
 
 main section {
   padding: 20px;
-  border-radius: var(--border-radius);
+  border-radius: 37;
 }
 
 h1 {
@@ -104,14 +104,14 @@ nav a {
 
 #logotype-wrapper > a {
   color: #fffae2;
-  font-size: 48;
+  font-size: 36;
   font-weight: medium;
   width: max-content;
   margin-left: 1rem;
 }
 
 .logotype-wrapper {
-  font-size: 48;
+  font-size: 36;
   font-family: "Runrik";
 }
 
@@ -120,9 +120,9 @@ header nav li a {
   margin: 1.5rem;
   background-color: var(--color-link-bg);
   color: var(--color-text);
-  font-size: var(--followup-text-size);
+  font-size: 32;
   padding: 0.5rem 1rem;
-  border-radius: var(--border-radius-links);
+  border-radius: 37;
 }
 
 /* Pilen efter menu-tekst */
