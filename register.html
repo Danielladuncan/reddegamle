@@ -37,8 +37,11 @@
       <h1>INDBERET SOM EVAKUERINGSHJÆLPER</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Bliv en del af beredskabet for ældre i nødssituationer</h2>
+          <p>
+            Når en brand opstår, kan ældre borgere have brug for ekstra hjælp til at komme sikkert ud. Ved at tilmelde dig som evakueringshjælper kan du få viden, træning og opdateringer om, hvordan man bedst støtter ældre under en evakuering, uanset
+            om du er frivillig, pårørende eller en del af plejepersonalet.
+          </p>
         </article>
         <form id="webform">
           <div class="form-group">
@@ -61,7 +64,7 @@
 
           <div class="form-group">
             <label for="role">Din rolle</label>
-            <select id="role">
+            <select id="role" name="role" required>
               <option value="">--Vælg din rolle--</option>
               <option value="helper">Frivillig hjælper</option>
               <option value="personale">Plejepersonale</option>
@@ -91,17 +94,23 @@
 
           <button>Indsend oplysninger</button>
         </form>
-
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
       </section>
       <section id="form-summary">
-        <h2>Summary</h2>
+        <h2>Opsamling</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p class="placeholder">Opsummering af formular</p>
+          <div>
+    <p>Fulde navn: <span id="full_name_output"></span></p>
+<p>Email: <span id="email_output"></span></p>
+<p>Telefonnummer: <span id="number_output"></span></p>
+<p>Din rolle: <span id="role_output"></span></p>
+<p>By/Område: <span id="city_output"></span></p>
+<p>Evt. bemærkninger: <span id="marks_output"></span></p>
+<p>Accepter vilkår: <span id="terms_output"></span></p>
+
+  </div>
         </article>
+      </section>
       </section>
     </main>
     <footer>
@@ -131,6 +140,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/register.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
