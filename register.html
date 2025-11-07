@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -19,7 +19,7 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> RED DE GAMLE! </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -34,19 +34,83 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>INDBERET SOM EVAKUERINGSHJÆLPER</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Bliv en del af beredskabet for ældre i nødssituationer</h2>
+          <p>
+            Når en brand opstår, kan ældre borgere have brug for ekstra hjælp til at komme sikkert ud. Ved at tilmelde dig som evakueringshjælper kan du få viden, træning og opdateringer om, hvordan man bedst støtter ældre under en evakuering, uanset
+            om du er frivillig, pårørende eller en del af plejepersonalet.
+          </p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <div class="form-group">
+            <label for="full_name">Fulde navn</label>
+            <input type="text" id="full_name" name="full_name" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="number">Telefonnummer</label>
+            <input type="number" id="number" name="number" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="role">Din rolle</label>
+            <select id="role" name="role" required>
+              <option value="">--Vælg din rolle--</option>
+              <option value="helper">Frivillig hjælper</option>
+              <option value="personale">Plejepersonale</option>
+              <option value="nurse">Sygeplejske</option>
+              <option value="family">Pårørende</option>
+            </select>
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="city">By/Område</label>
+            <input type="text" id="city" name="city" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="marks">Evt. bemærkninger</label>
+            <textarea name="marks" id="marks" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="terms">
+              <input type="checkbox" id="terms" name="accept_terms" value="yes" required />
+              Accepter vilkår
+            </label>
+          </div>
+
+          <button>Indsend oplysninger</button>
+        </form>
       </section>
       <section id="form-summary">
-        <h2>Summary</h2>
+        <h2>Opsamling</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p class="placeholder">Opsummering af formular</p>
+          <div>
+    <p>Fulde navn: <span id="full_name_output"></span></p>
+<p>Email: <span id="email_output"></span></p>
+<p>Telefonnummer: <span id="number_output"></span></p>
+<p>Din rolle: <span id="role_output"></span></p>
+<p>By/Område: <span id="city_output"></span></p>
+<p>Evt. bemærkninger: <span id="marks_output"></span></p>
+<p>Accepter vilkår: <span id="terms_output"></span></p>
+
+  </div>
         </article>
+      </section>
       </section>
     </main>
     <footer>
@@ -76,6 +140,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/register.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
