@@ -46,7 +46,7 @@
   --color-cta-newscard-bg-inverted: #6f90eb;
 
   /* Fonts */
-  --font-family-sans: ui-sans-serif;
+  --font-family-sans: "Rubik", ui-sans-serif;
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;

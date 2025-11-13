@@ -43,18 +43,18 @@
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="img/Personaleredning.png" alt="teaser_img" />
+          <img src="img/foran.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam ducimus ea, sed minima asperiores.</p>
+            <h2>Flammer på fjerde sal – naboer hjalp til fra gaden</h2>
+            <p>En voldsom brand ramte torsdag aften et ældreboligkompleks i Randers.</p>
             <a href="" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
-          <img src="img/alarm.png" alt="teaser_img" />
+          <img src="img/opgang.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam ducimus ea, sed minima asperiores.</p>
+            <h2>Plejepersonale redder ældre ud gennem røgen</h2>
+            <p>Under en brand på et plejecenter i Vejle handlede personalet hurtigt og beslutsomt.</p>
             <a href="" class="cta_btn">Se mere</a>
           </div>
         </article>
@@ -64,19 +64,65 @@
           <h3>Brand på plejehjem i Aarhus – ældre evakueres i hast</h3>
           <p>Hurtig indsats redder beboere ud af røgfyldt plejehjem i Aarhus.</p>
           <img src="img/aarhusbrand.png" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="news_popover">Læs mere</button>
+          <!-- <a popovertarget=”news_popover” class="cta_btn" href="">Læs mere</a> -->
+          <!-- Nyheden -->
+          <div id="news_popover" popover>
+            <button popovertarget="news_popover">Luk</button>
+            <h4>BRAND PÅ PLEJEHJEM I AARHUS - ÆLDRE EVAKUERES I HAST</h4>
+            <time class="newsDate">6. APRIL 2025 – KL. 20:14</time>
+            <img src="img/Aarhusbrand.png" />
+            <p>Hurtig indsats redder beoere ud af røgfyldt plejehjem i Aarhus.</p>
+            <p>
+              En kraftig brand brød tidligt tirsdag morgen ud på plejehjemmet Solgården i det sydlige Aarhus. Røgen bredte sig hurtigt gennem flere afdelinger, og personalet gik straks i gang med at få beboerne ud. Brandvæsenet ankom få minutter
+              senere og fik ilden under kontrol.
+            </p>
+            <p>
+              Frivillige fra TrygEvakuering hjalp med at berolige ældre og flytte dem til et midlertidigt samlingssted i nærliggende lokaler. Ingen meldes alvorligt tilskadekomne, men flere er blevet tilset for røgforgiftning. Ifølge indsatslederen
+              blev evakueringsplanen fulgt til punkt og prikke – en indsats, der muligvis reddede liv.
+            </p>
+          </div>
+        </article>
+
+        <article class="news_card">
+          <h3>Alarmen lød midt i natten – redning i sidste øjeblik</h3>
+          <p>Nattevagter reagerer hurtigt og får alle ud i tide.</p>
+          <img src="img/alarm.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="news_popover3">Læs mere</button>
+          <!-- <a popovertarget=”news_popover” class="cta_btn" href="">Læs mere</a> -->
+          <!-- Nyheden -->
+          <div id="news_popover3" popover>
+            <button popovertarget="news_popover3">Luk</button>
+            <h4>Alarmen lød midt i natten – redning i sidste øjeblik</h4>
+            <time class="newsDate">6. APRIL 2025 – KL. 20:14</time>
+            <img src="img/alarm.png" />
+            <p>Nattevagter reagerer hurtigt og får alle ud i tide.</p>
+            <p>Klokken 02.14 natten til søndag gik brandalarmen på Bøgehaven Plejecenter i Hillerød. Nattevagterne reagerede straks og begyndte evakueringen, mens røgfyldte gange gjorde det vanskeligt at se.</p>
+            <p>
+              Flere beboere blev hjulpet ud i kørestole og med støtte fra frivillige, der bor i området. “Alt gik hurtigt, men vi holdt roen,” siger nattevagten Louise Madsen. Brandvæsenet fik ilden slukket efter 40 minutter. Hændelsen understreger,
+              hvor vigtigt det er at kende sin evakueringsplan. Kommunen roser indsatsen og vil bruge erfaringerne i kommende SikkerSammen-træninger.
+            </p>
+          </div>
         </article>
         <article class="news_card">
           <h3>Plejepersonale redder ældre ud gennem røgen</h3>
           <p>Modigt personale hjælper ældre i sikkerhed midt i flammerne.</p>
-          <img src="img/opgang.png" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Alarmen lød midt i natten – redning i sidste øjeblik</h3>
-          <p>Nattevagter reagerer hurtigt og får alle ud i tide.</p>
-          <img src="img/foran.png" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <img src="img/Personaleredning.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="news_popover2">Læs mere</button>
+          <!-- <a popovertarget=”news_popover” class="cta_btn" href="">Læs mere</a> -->
+          <!-- Nyheden -->
+          <div id="news_popover2" popover>
+            <button popovertarget="news_popover2">Luk</button>
+            <h4>Plejepersonale redder ældre ud gennem røgen</h4>
+            <time class="newsDate">6. APRIL 2025 – KL. 20:14</time>
+            <img src="img/Personaleredning.png" />
+            <p>Modigt personale hjælper ældre i sikkerhed midt i flammerne.</p>
+            <p>Under en brand på et plejecenter i Vejle natten til mandag viste plejepersonalet imponerende handlekraft. I tæt røg og med begrænset sigtbarhed hjalp de ældre beboere ud af bygningen, inden flammerne nåede tagkonstruktionen.</p>
+            <p>
+              Flere ansatte brugte vådt tøj som beskyttelse mod røg, mens de guidede beboere til sikkerhed. Brandvæsenet roser personalet for at reagere hurtigt og roligt. “Deres indsats var afgørende,” fortæller indsatslederen. Tre personer blev
+              kørt til tjek på hospitalet, men alle forventes udskrevet i løbet af dagen. Plejecentret vil nu gennemgå sin beredskabsplan i samarbejde med SikkerSammen.
+            </p>
+          </div>
         </article>
       </section>
     </main>
