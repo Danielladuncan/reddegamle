@@ -1,5 +1,5 @@
 html {
-  font-family: "Rubik";
+  font-family: var(--font-family-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
 }
@@ -30,15 +30,15 @@ header {
 
 main section {
   padding: 20px;
-  border-radius: 37;
+  border-radius: var(--border-radius);
 }
 
 h1 {
-  font-size: 48;
-  font-weight: bold;
-  color: #fff;
+  font-size: var(--font-h1-size);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-inverted);
   margin: 5px 0;
-  line-height: 2rem;
+  line-height: 1.3rem;
   text-align: left;
 }
 
@@ -47,30 +47,28 @@ h1 {
   margin: 40px 0 20px 0;
   padding: 15px 30px;
   background-color: var(--color-head-bg);
-  font-size: 36;
+  font-size: var(--font-h2-size);
 }
 
 #instruction p {
   grid-column: 1/-1;
   margin-bottom: 20px;
-  font-size: 36;
+  font-size: var(--font-h2-size);
   line-height: 1.5rem;
 }
 
 .sub {
-  font-size: 48;
-  font-weight: lighter;
-  color: white;
+  font-size: var(--font-sub1-size);
+  font-weight: var(--font-weight-light);
+  color: var(--color-text-inverted);
 }
 
 h2 {
-  font-size: 36;
-  font-weight: bold;
+  font-size: var(--headline2-size);
 }
 
 h3 {
-  font-size: 32;
-  font-weight: bold;
+  font-size: var(--headline3-size);
 }
 
 main > h1 {
@@ -88,7 +86,7 @@ nav ul {
 }
 
 a {
-  font-family: "Rubik";
+  font-family: var(--font-family-sans);
 }
 
 nav a {
@@ -98,25 +96,19 @@ nav a {
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: #000;
+  background-color: var(--color-logotype-bg);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 3.6rem;
-  font-family: "Rubik";
 }
 
 #logotype-wrapper > a {
-  color: #fffae2;
-  font-size: 36;
-  font-weight: medium;
+  color: var(--color-text-logotype);
+  font-size: var(--font-logotype-size);
+  font-weight: var(--font-weight-medium);
   width: max-content;
   margin-left: 1rem;
-}
-
-.logotype-wrapper {
-  font-size: 36;
-  font-family: "Runrik";
 }
 
 /* Global menu */
@@ -124,9 +116,9 @@ header nav li a {
   margin: 1.5rem;
   background-color: var(--color-link-bg);
   color: var(--color-text);
-  font-size: 32;
+  font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
-  border-radius: 37;
+  border-radius: var(--border-radius-links);
 }
 
 /* Pilen efter menu-tekst */
@@ -146,14 +138,4 @@ nav a:active {
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
-}
-
-.hotspot {
-  fill: antiquewhite;
-  stroke: black;
-}
-
-.hotspot:hover {
-  cursor: pointer;
-  filter: grayscale(100);
 }

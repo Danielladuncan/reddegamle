@@ -8,7 +8,7 @@
   /* Logotype */
   --color-logotype-bg: #000;
   --color-text-logotype: #fffae2;
-  --font-logotype-size: 2rem;
+  --font-logotype-size: 1rem;
 
   /* Global menu */
   --color-menu-bg: #6f90eb;
@@ -40,7 +40,7 @@
   --color-card-bg: #ffffff;
   --color-cta-card-bg: #ff4b00;
   /* news-cards */
-  --color-news-bg: #fffae2;
+  --color-news-bg: #dbdad4;
   --color-news-bg-inverted: #dbe2f5;
   --color-cta-newscard-bg: #ffa680;
   --color-cta-newscard-bg-inverted: #6f90eb;
