@@ -24,6 +24,10 @@ header {
   column-gap: 1rem;
 }
 
+#icon {
+  width: 20%;
+}
+
 main section {
   padding: 20px;
   border-radius: 37;
