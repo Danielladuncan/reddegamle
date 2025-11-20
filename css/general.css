@@ -25,7 +25,8 @@ header {
 }
 
 #icon {
-  width: 20%;
+  width: 17%;
+  padding-top: 1rem;
 }
 
 main section {
@@ -40,6 +41,7 @@ h1 {
   margin: 5px 0;
   line-height: 1.3rem;
   text-align: left;
+  padding-top: 40px;
 }
 
 #instruction h1,
@@ -115,10 +117,10 @@ nav a {
 header nav li a {
   margin: 1.5rem;
   background-color: var(--color-link-bg);
-  color: var(--color-text);
+  color: #000;
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
-  border-radius: var(--border-radius-links);
+  border-radius: 37px;
 }
 
 /* Pilen efter menu-tekst */

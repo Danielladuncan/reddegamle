@@ -1,10 +1,10 @@
 #webform {
-  background-color: #fff;
+  background-color: var(--form-background-color);
 }
 
 #form-section,
 #form-summary {
-  background-color: #fff;
+  background-color: var(--color-card-bg);
   padding: 0 80 0 40;
   border-radius: 37px;
   line-height: 1.3rlh;
@@ -12,8 +12,8 @@
 #form-summary h2 {
   line-height: 3rem;
   text-align: center;
-  background-color: #000;
-  color: white;
+  background-color: var(--color-headline-bg);
+  color: var(--color-headline-text-page);
   padding-top: 5px;
   margin-left: -0.84rlh;
   margin-right: -0.84rlh;
@@ -43,8 +43,8 @@
 #form-info h2 {
   line-height: 3rem;
   text-align: center;
-  background-color: #000;
-  color: white;
+  background-color: var(--color-headline-bg);
+  color: var(--color-headline-text-page);
   padding-top: 5px;
   margin-left: -0.84rlh;
   margin-right: -0.84rlh;
@@ -75,7 +75,7 @@ select {
 }
 
 button {
-  border: 1px solid #ff0000;
+  border: 1px;
   background-color: #ff0000;
   color: #fff;
   border-radius: 10px;

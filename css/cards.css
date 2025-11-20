@@ -1,5 +1,5 @@
 .daily_card {
-  background-color: white;
+  background-color: var(--color-card-bg);
   display: grid;
   grid-template-columns: 3fr 5fr;
   gap: 10px;
@@ -13,18 +13,20 @@
   gap: 10px;
 }
 .daily_text h2 {
-  background-color: #000;
-  color: #fffae2;
+  background-color: var(--color-headline-bg);
+  color: var(--color-text-inverted);
   padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 1rem;
   margin: 0 0 0.5rem 0;
 }
 .daily_text p {
   padding-right: 2rem;
   margin: 0 0 1rem 0;
+  font-size: 1.5rem;
 }
 .daily_text .cta_btn {
   justify-self: left;
   width: 80%;
+  font-size: 1.5rem;
 }
 .daily_img {
   width: 100%;
@@ -32,7 +34,7 @@
   object-fit: cover;
 }
 .news_card {
-  background-color: #fffae2;
+  background-color: var(--color-news-bg);
   display: grid;
   grid-template-rows: repeat(min-content);
   gap: 0.4rem;
@@ -50,6 +52,8 @@
 }
 .news_card p {
   margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  padding-top: 1rem;
 }
 .news_card:first-child:before {
   content: "BREAKING NEWS";
@@ -71,7 +75,13 @@
 
 .news_card .cta_btn {
   justify-self: center;
+  font-size: 1.5rem;
 }
+
+h4 {
+  font-size: 1.5rem;
+}
+
 .cta_btn {
   display: inline-block;
   padding: 0.4rem 1rem;
