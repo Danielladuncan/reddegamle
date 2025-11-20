@@ -141,3 +141,23 @@ nav a:active {
 footer a {
   font-size: 0.7rem;
 }
+
+#toggle img {
+  width: 10%;
+  align-items: center;
+}
+
+#toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5em;
+}
+
+button:hover {
+  background: #222;
+}
+/* Active-styles (imens man klikker) */
+button:active {
+  scale: 0.98;
+}
